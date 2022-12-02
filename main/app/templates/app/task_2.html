@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_2</title>
+</head>
+<body>
+  <form method="POST" action="">
+    {% csrf_token %}
+    {% if message %}
+        <p>Имя: {{Name}}</p>
+        <p>Фамилия: {{Suname}}</p>
+        <p>Email: {{Email}}</p>
+        <p>Адрес: {{Adress}}</p>
+
+    {% else %}
+        <span>Имя:<span> {{form.Name}}<br>
+        <span>Фаимлия:<span>{{form.SuName}}<br>
+        <span>Email:<span>{{form.Email}}<br>
+        <span>Адресс:<span>{{form.Adress}}<br>
+        <button type="submit">Press to me</button>
+    {% endif %}
+  </form>
+</body>
+</html>

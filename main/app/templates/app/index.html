@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Form</title>
+</head>
+<body>
+    <div class="contaner">
+        <div class="contaner__wrap">
+            <div class="contaner__wrap__BlockForm">
+                <p class="contaner__wrap__BlockForm__MainText">Make an appointment</p>
+                <form class="contaner__wrap__BlockForm__Form" method="POST" action="appointment">
+                    {% csrf_token %}
+                    <div class="contaner__wrap__BlockForm__Form__BlockBtn">
+                        {{form.Name}}
+<!--                        <input type="text" placeholder="Name" class="contaner__wrap__BlockForm__Form__BlockBtn__input input">-->
+<!--                        <input type="email" placeholder="Email" class="contaner__wrap__BlockForm__Form__BlockBtn__input input">-->
+                        {{form.Email}}
+<!--                    <input type="tel" placeholder="Phone Number" class="contaner__wrap__BlockForm__Form__BlockBtn__input input">-->
+                        {{form.Phone}}
+                        {{form.Select}}
+<!--                        <input type="text" placeholder="Select Service" class="contaner__wrap__BlockForm__Form__BlockBtn__input input">-->
+
+                    </div>
+
+                    {{form.TextArea}}
+<!--                    <textarea placeholder="Tell us about the car needing service(s)" class="contaner__wrap__BlockForm__Form__input input"></textarea>-->
+                    
+                    <div class="contaner__wrap__BlockForm__BlockBtn">
+                        <button class="contaner__wrap__BlockForm__Form__BlockBtn__btn">
+                            <p class="contaner__wrap__BlockForm__Form__BlockBtn__btn__text">Make an Appointment</p>
+                            <div class="contaner__wrap__BlockForm__Form__BlockBtn__btn__text__BlockImg">
+                                <img src="{% static 'img/arrow_forward_24.svg' %}" class="contaner__wrap__BlockForm__Form__BlockBtn__btn__text__img">
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contaner__wrap__BlockText">
+                <p class="contaner__wrap__BlockText__MainText">Maxime placeat facere possimus omnis</p>
+                <p class="contaner__wrap__BlockText__NumberText">17k</p>
+                <p class="contaner__wrap__BlockText__Text">customers served (and counting)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.contaner{
+    padding: 130px 210px;
+    background: url('../img/BG_Image.svg');
+}
+
+
+.contaner__wrap{
+    display: flex;
+    gap: 111px;
+    
+}
+
+.contaner__wrap__BlockForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 57px 76px;
+    background: #FFFFFF;
+}
+.input{
+    background: #F5F5F5;
+    padding: 17px 5px 17px 23px;
+    border: 0;
+    font-family: 'Roboto';
+}
+
+.contaner__wrap__BlockForm__MainText{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+
+    /* /Car Repair/Secondary */
+
+    color: #02133C;
+
+    margin-bottom: 48px;
+}
+
+.contaner__wrap__BlockForm__Form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contaner__wrap__BlockForm__Form__input{
+    width: 470px;
+    height: 180px;
+    font-family: 'Roboto';
+
+    margin-bottom: 30px;
+}
+
+.contaner__wrap__BlockForm__Form__BlockBtn{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 48px);
+    grid-gap: 22px;
+
+    margin-bottom: 22px;
+
+}
+
+.contaner__wrap__BlockForm__Form__BlockBtn__btn{
+    background: linear-gradient(110deg, #C40B0B  85%, #E30B0B 85% 100%);
+}
+
+.contaner__wrap__BlockForm__Form__BlockBtn__btn{
+
+    
+    align-items: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    border-radius: 2px;
+    display: flex;
+    gap: 8px;
+
+    padding: 9px 5px;
+    border: 0;
+}
+
+
+.contaner__wrap__BlockForm__Form__BlockBtn__btn__text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+}
+.contaner__wrap__BlockForm__BlockBtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contaner__wrap__BlockText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contaner__wrap__BlockText__MainText{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    /* or 120% */
+
+    text-align: center;
+    margin-bottom: 46px;
+
+    color: #FFFFFF;
+}
+
+.contaner__wrap__BlockText__NumberText{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 56px;
+    /* or 58% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 46px;
+
+    /* /Car Repair/Primary */
+
+    color: #C40B0B;
+}
+
+.contaner__wrap__BlockText__Text{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+
+    /* /Neutral/White */
+
+    color: #FFFFFF;
+}
